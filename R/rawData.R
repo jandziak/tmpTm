@@ -9,13 +9,16 @@ RawData <- function(str) {
 }
 
 #' @export
-RawData.default <- function(str = NULL) {
-  str <- structure(list(str), class = 'RawData')
+RawData.default <- function(str=NULL) {
+  str <- structure(list(content=as.list(str)), class='RawData')
   return(str)
 }
 
-
+#' @export
 length.RawData <- function(x, ...){
-  ifelse(is.null(x[[1]]), 0, length(x))
+  if(is.null(x$content[1]))
+     0
+  else
+     length(x$content)
 }
 
