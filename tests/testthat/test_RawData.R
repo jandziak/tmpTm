@@ -18,11 +18,6 @@ test_ClassRawData()
 context("One article")
 test_OneArticle <-function(){
   rd <- RawData("ala")
-  expect_equal(rd[[1]] == "ala")
+  expect_equal(rd[[1]], "ala")
 }
-test_One_Article()
-
-test_OutOfBands <- function(){
-  rd <- RawData("ala")
-
-}
+test_OneArticle()
