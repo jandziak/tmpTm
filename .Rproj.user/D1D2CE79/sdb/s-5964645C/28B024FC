@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' tmpTm: A Text mining combo\n#'\n#' At the beggining is just simple package, later I will change it for\n#' some more.\n#'\n#' @section nowa:\n#' cos tu sie wpisuje\n#'\n#' @docType package\n#' @name tmpTm\nNULL\n",
+    "created" : 1464168434939.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "641897769",
+    "id" : "28B024FC",
+    "lastKnownWriteTime" : 1464168687,
+    "last_content_update" : 0,
+    "path" : "C:/Repository/tmpTm/R/tmpTm.R",
+    "project_path" : "R/tmpTm.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

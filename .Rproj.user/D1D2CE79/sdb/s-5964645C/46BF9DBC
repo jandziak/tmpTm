@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "context('Raw data')\n\ntest_RawData <- function(){\n  rd <- RawData()\n  expect_equal(length(rd),0)\n}\n\ntest_RawData()\n\n\n\n",
+    "created" : 1464165714112.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "267279218",
+    "id" : "46BF9DBC",
+    "lastKnownWriteTime" : 1464166978,
+    "last_content_update" : 0,
+    "path" : "C:/Repository/tmpTm/tests/testthat/test_RawData.R",
+    "project_path" : "tests/testthat/test_RawData.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

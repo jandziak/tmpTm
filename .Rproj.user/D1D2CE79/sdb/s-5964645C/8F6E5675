@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(testthat)\nlibrary(tmpTm)\n\ntest_check(\"tmpTm\")\n",
+    "created" : 1464163368233.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2841271299",
+    "id" : "8F6E5675",
+    "lastKnownWriteTime" : 1464165582,
+    "last_content_update" : 0,
+    "path" : "C:/Repository/tmpTm/tests/testthat.R",
+    "project_path" : "tests/testthat.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
