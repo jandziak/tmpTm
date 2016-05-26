@@ -29,3 +29,8 @@ test_NewRawDataTextOOB <- function(){
 }
 test_NewRawDataTextOOB()
 
+test_NewRawDataMetaDocument <- function(){
+  rd <- NewRawData("asa")
+  expect_equal(getMeta(rd,1,language), 'en')
+}
+test_NewRawDataMetaDocument()
