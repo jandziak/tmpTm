@@ -9,9 +9,9 @@ RawData <- function(str) {
 }
 
 #' @export
-RawData.default <- function(str=NULL) {
+RawData.default <- function(str = NULL) {
   if(!is.null(str))
-  str <- structure(list(content=as.list(str),
+  str <- structure(list(content = as.list(str),
                         meta = list(author = as.list(sapply(1:length(str), function(x) character())))),
                    class='RawData')
   return(str)

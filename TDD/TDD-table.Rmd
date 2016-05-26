@@ -1,0 +1,15 @@
+---
+title: "TDD-table"
+author: "Janek Idziak"
+date: "26 maja 2016"
+output: html_document
+---
+
+* ~~read empty source~~
+* read data from string vector
+* text access
+* metadata access 
+* reading data from other sources
+
+
+

@@ -1,6 +1,13 @@
 context('No argument constructor')
 
 test_NewRawData <- function(){
-  expect_message(NewRawData(), 'Error: argument "source" is missing')
+  try(NewRawData())
+  expect_error(NewRawData(), 'argument "x" is missing')
 }
 test_NewRawData()
+
+test_NewRawDataDocument <- function(){
+  rd <- NewRawData("ala")
+  expect_equal(getDoc(rd,1), "ala")
+}
+test_NewRawDataDocument()
