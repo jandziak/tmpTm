@@ -10,7 +10,10 @@ RawData <- function(str) {
 
 #' @export
 RawData.default <- function(str=NULL) {
-  str <- structure(list(content=as.list(str)), class='RawData')
+  if(!is.null(str))
+  str <- structure(list(content=as.list(str),
+                        meta = list(author = as.list(sapply(1:length(str), function(x) character())))),
+                   class='RawData')
   return(str)
 }
 
