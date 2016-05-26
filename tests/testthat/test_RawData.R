@@ -64,4 +64,12 @@ test_GetAtributesManyArticles <- function(){
 }
 test_GetAtributesManyArticles()
 
-#Czas na stworzenie nowej klasy <-  artykul + czas na stworzenie nowej klasy magazyn
+test_RawDataNA <- function(){
+  rd <- RawData(NA)
+  expect_equal(is.na(rd$content[1]), TRUE)
+  expect_equal(rd$meta$author[[1]], character(0))
+}
+test_RawDataNA()
+#Czas na stworzenie nowej klasy <-  text + czas na stworzenie nowej klasy korpus
+#Stworzenie tabelki zadań takiej jak w TDD
+
