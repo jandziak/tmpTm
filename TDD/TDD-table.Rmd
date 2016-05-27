@@ -6,11 +6,12 @@ output: html_document
 ---
 
 * ~~read empty source~~
-* read data from string vector
+* ~~read data from string vector~~
 * ~~text access~~
 * ~~metadata access~~
 * reading data from other sources
 * class 
 * class for single article
-
-
+* standardowe meta dane
+* acces to single article (part of corpus)
+* getDoc, getMeta as a class methods [possible ?]

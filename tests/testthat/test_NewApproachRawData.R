@@ -58,3 +58,9 @@ test_NewRawDataMetaNoMeta <- function(){
   expect_error(getMeta(rd,3, "author"), 'There is no metadata: "author"')
 }
 test_NewRawDataMetaNoMeta()
+
+test_NewRawDataClass <- function(){
+  rd <- NewRawData("ala")
+  expect_equal(class(rd), "RawData")
+}
+test_NewRawDataClass()
