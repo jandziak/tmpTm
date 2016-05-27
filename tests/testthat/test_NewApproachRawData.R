@@ -35,11 +35,26 @@ test_NewRawDataMetaDocument <- function(){
 }
 test_NewRawDataMetaDocument()
 
+test_NewRawDataMetaTwoDocuments <- function(){
+  rd <- NewRawData(c("asa","asas"))
+  expect_equal(getMeta(rd,2,"language"), 'en')
+}
+test_NewRawDataMetaTwoDocuments()
+
+test_NewRawDataMetaManyDocuments <- function(){
+  rd <- NewRawData(paste(1:100, "a", sep = ""))
+  expect_equal(getMeta(rd,67,"language"), 'en')
+}
+test_NewRawDataMetaManyDocuments()
+
 test_NewRawDataMetaOOB <- function(){
   rd <- NewRawData(c("ala", "ela"))
   expect_error(getMeta(rd,3, "language"), 'index "i" out of bands')
 }
 test_NewRawDataMetaOOB()
 
-
-
+test_NewRawDataMetaNoMeta <- function(){
+  rd <- NewRawData(c("ala", "ela"))
+  expect_error(getMeta(rd,3, "author"), 'There is no metadata: "author"')
+}
+test_NewRawDataMetaNoMeta()
