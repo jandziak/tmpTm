@@ -7,9 +7,10 @@ output: html_document
 
 * ~~read empty source~~
 * read data from string vector
-* text access
-* metadata access 
+* ~~text access~~
+* ~~metadata access~~
 * reading data from other sources
-
+* class 
+* class for single article
 
 

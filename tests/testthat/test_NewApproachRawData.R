@@ -34,3 +34,12 @@ test_NewRawDataMetaDocument <- function(){
   expect_equal(getMeta(rd,1,"language"), 'en')
 }
 test_NewRawDataMetaDocument()
+
+test_NewRawDataMetaOOB <- function(){
+  rd <- NewRawData(c("ala", "ela"))
+  expect_error(getMeta(rd,3, "language"), 'index "i" out of bands')
+}
+test_NewRawDataMetaOOB()
+
+
+
